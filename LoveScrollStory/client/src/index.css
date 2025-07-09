@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Nunito:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(350, 100%, 98%);
+  --foreground: hsl(340, 40%, 20%);
+  --muted: hsl(345, 85%, 92%);
+  --muted-foreground: hsl(340, 20%, 50%);
+  --popover: hsl(350, 100%, 98%);
+  --popover-foreground: hsl(340, 40%, 20%);
+  --card: hsl(350, 100%, 98%);
+  --card-foreground: hsl(340, 40%, 20%);
+  --border: hsl(345, 50%, 85%);
+  --input: hsl(345, 50%, 85%);
+  --primary: hsl(330, 90%, 70%);
+  --primary-foreground: hsl(350, 100%, 99%);
+  --secondary: hsl(345, 85%, 92%);
+  --secondary-foreground: hsl(340, 40%, 20%);
+  --accent: hsl(345, 85%, 92%);
+  --accent-foreground: hsl(340, 40%, 20%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(330, 90%, 70%);
+  --radius: 1rem;
+
+  /* Enhanced cute and beautiful pastel color palette */
+  --blush: hsl(350, 70%, 90%);
+  --rose-gold: hsl(340, 65%, 82%);
+  --cream: hsl(35, 60%, 95%);
+  --peach: hsl(20, 70%, 88%);
+  --lavender: hsl(300, 50%, 92%);
+  --deep-rose: hsl(330, 75%, 55%);
+  --soft-pink: hsl(345, 80%, 88%);
+  --warm-white: hsl(350, 40%, 98%);
+  --dusty-rose: hsl(340, 60%, 70%);
+  --sage: hsl(140, 20%, 90%);
+  --charcoal: hsl(340, 30%, 15%);
+  --soft-gray: hsl(340, 15%, 60%);
+  --baby-pink: hsl(355, 85%, 93%);
+  --cotton-candy: hsl(320, 80%, 90%);
+  --pearl: hsl(30, 40%, 96%);
+  --champagne: hsl(45, 50%, 92%);
+  --mauve: hsl(310, 40%, 85%);
+  --rose-quartz: hsl(340, 70%, 85%);
+  --powder-blue: hsl(200, 60%, 90%);
+  --mint: hsl(150, 50%, 88%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .font-quicksand {
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .font-nunito {
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .font-dancing {
+    font-family: 'Dancing Script', cursive;
+  }
+
+  .gradient-bg {
+    background: linear-gradient(135deg, hsl(330, 85%, 65%) 0%, hsl(320, 70%, 80%) 30%, hsl(300, 60%, 85%) 70%, hsl(280, 50%, 90%) 100%);
+  }
+
+  .elegant-gradient {
+    background: linear-gradient(135deg, hsl(350, 80%, 95%) 0%, hsl(340, 70%, 92%) 30%, hsl(320, 60%, 90%) 70%, hsl(300, 50%, 94%) 100%);
+  }
+
+  .professional-gradient {
+    background: linear-gradient(135deg, hsl(355, 85%, 96%) 0%, hsl(345, 75%, 92%) 25%, hsl(35, 60%, 95%) 50%, hsl(320, 55%, 93%) 75%, hsl(200, 60%, 95%) 100%);
+  }
+
+  .sophisticated-gradient {
+    background: linear-gradient(45deg, hsl(300, 60%, 92%) 0%, hsl(340, 70%, 90%) 25%, hsl(350, 80%, 94%) 50%, hsl(30, 50%, 95%) 75%, hsl(150, 40%, 92%) 100%);
+  }
+
+  .dreamy-gradient {
+    background: linear-gradient(135deg, hsl(320, 80%, 88%) 0%, hsl(280, 70%, 90%) 25%, hsl(200, 60%, 92%) 50%, hsl(150, 50%, 90%) 75%, hsl(350, 75%, 92%) 100%);
+  }
+
+  .sunset-gradient {
+    background: linear-gradient(135deg, hsl(355, 85%, 90%) 0%, hsl(20, 80%, 88%) 30%, hsl(45, 70%, 90%) 60%, hsl(300, 60%, 88%) 100%);
+  }
+
+  .text-blush {
+    color: hsl(350, 80%, 75%);
+  }
+
+  .text-rose-gold {
+    color: hsl(340, 70%, 70%);
+  }
+
+  .text-deep-rose {
+    color: hsl(330, 80%, 45%);
+  }
+
+  .text-soft-pink {
+    color: hsl(345, 75%, 60%);
+  }
+
+  .text-dusty-rose {
+    color: hsl(340, 65%, 55%);
+  }
+
+  .text-warm-white {
+    color: hsl(350, 20%, 98%);
+  }
+
+  .text-charcoal {
+    color: hsl(340, 40%, 20%);
+  }
+
+  .text-soft-gray {
+    color: hsl(340, 20%, 50%);
+  }
+
+  .text-baby-pink {
+    color: hsl(355, 85%, 75%);
+  }
+
+  .text-cotton-candy {
+    color: hsl(320, 80%, 70%);
+  }
+
+  .text-mauve {
+    color: hsl(310, 50%, 60%);
+  }
+
+  .text-rose-quartz {
+    color: hsl(340, 70%, 65%);
+  }
+
+  .text-powder-blue {
+    color: hsl(200, 70%, 65%);
+  }
+
+  .text-mint {
+    color: hsl(150, 60%, 55%);
+  }
+
+  .bg-blush {
+    background-color: hsl(350, 80%, 90%);
+  }
+
+  .bg-rose-gold {
+    background-color: hsl(340, 75%, 82%);
+  }
+
+  .bg-cream {
+    background-color: hsl(35, 60%, 95%);
+  }
+
+  .bg-peach {
+    background-color: hsl(20, 80%, 88%);
+  }
+
+  .bg-lavender {
+    background-color: hsl(300, 60%, 90%);
+  }
+
+  .bg-deep-rose {
+    background-color: hsl(330, 80%, 68%);
+  }
+
+  .bg-soft-pink {
+    background-color: hsl(345, 85%, 88%);
+  }
+
+  .bg-warm-white {
+    background-color: hsl(350, 50%, 97%);
+  }
+
+  .bg-dusty-rose {
+    background-color: hsl(340, 65%, 75%);
+  }
+
+  .bg-sage {
+    background-color: hsl(140, 25%, 90%);
+  }
+
+  .bg-charcoal {
+    background-color: hsl(340, 30%, 18%);
+  }
+
+  .bg-baby-pink {
+    background-color: hsl(355, 90%, 93%);
+  }
+
+  .bg-cotton-candy {
+    background-color: hsl(320, 85%, 90%);
+  }
+
+  .bg-pearl {
+    background-color: hsl(30, 45%, 96%);
+  }
+
+  .bg-champagne {
+    background-color: hsl(45, 55%, 92%);
+  }
+
+  .bg-mauve {
+    background-color: hsl(310, 45%, 85%);
+  }
+
+  .bg-rose-quartz {
+    background-color: hsl(340, 75%, 85%);
+  }
+
+  .bg-powder-blue {
+    background-color: hsl(200, 65%, 90%);
+  }
+
+  .bg-mint {
+    background-color: hsl(150, 55%, 88%);
+  }
+
+  .text-charcoal {
+    color: hsl(220, 15%, 20%);
+  }
+
+  .text-soft-gray {
+    color: hsl(220, 10%, 45%);
+  }
+
+  .border-blush {
+    border-color: hsl(345, 85%, 90%);
+  }
+
+  .border-rose-gold {
+    border-color: hsl(340, 60%, 85%);
+  }
+
+  .border-deep-rose {
+    border-color: hsl(330, 85%, 65%);
+  }
+
+  .border-soft-pink {
+    border-color: hsl(345, 75%, 88%);
+  }
+}
+
+@layer utilities {
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  @keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
+  
+  @keyframes sparkle {
+    0%, 100% { opacity: 0; transform: scale(0.5); }
+    50% { opacity: 1; transform: scale(1); }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  @keyframes petalFall {
+    0% {
+      transform: translateY(-100vh) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes heartBurst {
+    0% {
+      transform: scale(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1) rotate(360deg) translateY(-100px);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: hsl(330, 81%, 60%); }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .animate-heartbeat {
+    animation: heartbeat 2s ease-in-out infinite;
+  }
+  
+  .animate-sparkle {
+    animation: sparkle 2s ease-in-out infinite;
+  }
+  
+  .animate-fade-in-up {
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  .animate-bounce-gentle {
+    animation: bounce 2s ease-in-out infinite;
+  }
+  
+  .animate-petal-fall {
+    animation: petalFall 6s linear infinite;
+  }
+  
+  .animate-heart-burst {
+    animation: heartBurst 2s ease-out forwards;
+  }
+
+  .typewriter {
+    overflow: hidden;
+    border-right: 3px solid hsl(330, 81%, 60%);
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+  }
+
+  .scroll-reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .love-button {
+    transition: all 0.3s ease;
+    transform: scale(1);
+  }
+
+  .love-button:hover {
+    transform: scale(1.1);
+  }
+
+  .love-button:active {
+    transform: scale(0.95);
+  }
+
+  .particle-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .particle {
+    position: absolute;
+    font-size: 1.2rem;
+    opacity: 0.7;
+  }
+
+  .heart-burst {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  .heart-particle {
+    position: absolute;
+    font-size: 1.5rem;
+    animation: heartBurst 2s ease-out forwards;
+  }
+
+  .petal {
+    position: fixed;
+    font-size: 1.5rem;
+    z-index: 2;
+    pointer-events: none;
+    animation: petalFall 6s linear infinite;
+  }
+}

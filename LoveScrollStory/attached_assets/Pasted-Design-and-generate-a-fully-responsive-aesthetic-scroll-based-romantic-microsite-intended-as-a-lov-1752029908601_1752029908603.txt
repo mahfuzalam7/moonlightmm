@@ -1,0 +1,132 @@
+Design and generate a fully responsive, aesthetic, scroll-based romantic microsite intended as a love confession from a boy to a girl. The goal is to create an emotional, cinematic digital experience that feels like a love letter told through poetry, visuals, and soft animation.
+
+The tone should be sincere, gentle, and timeless — not childish or gimmicky. Every section should feel intentional, beautiful, and mobile-first.
+
+🎨 Visual & Emotional Design Style
+Aesthetic, elegant, and romantic
+
+Color palette: blush pinks, ivory, warm beige, subtle gold
+
+Soft floating particles (hearts, petals, or sparkles)
+
+Smooth animations and subtle transitions
+
+Fonts:
+
+Headings: DM Serif Display or Playfair Display
+
+Body: Poppins, Inter, or Nunito
+
+Layout: full-bleed vertical scroll, with good white space
+
+Mood: emotionally cinematic, artistic, poetic
+
+🧩 Page Structure (Scroll Sections)
+1. Hero Section
+Title: “If I Could Say It…”
+
+Subtitle: “Your heart already knows the words I never spoke.”
+
+Soft floating heart animation in background
+
+Centered typography with fade-in entrance
+
+2. Poetry Slider Section
+Horizontal or vertical slider showing 3–5 romantic quotes
+
+From authors like: Rumi, Pablo Neruda, Tagore, Gibran
+
+Each quote on its own card with author attribution
+
+Smooth transitions (fade, swipe, or scroll)
+
+3. Interactive Love Question
+Centered question: “Do you love me?”
+
+Two buttons:
+
+Yes 💖
+
+Of course 🥺
+
+On click:
+
+Floating heart animation
+
+Message appears: “I knew it. You just made my universe brighter.”
+
+4. Cute Characters Section
+Two illustrated cute characters (boy & girl)
+
+Style: Soft anime or Pixar-like (blushing, expressive)
+
+Subtle hover animation or bounce on scroll
+
+Placed side-by-side or mirrored
+
+5. Soft Suggestion Section
+Title: “If I Could Suggest Just One Thing…”
+
+Poetic paragraph:
+
+“Don’t lose the version of you
+that forgets she’s magic.”
+“The way you smile like morning light —
+don’t ever dim that.”
+
+Animated petals or sparkles floating lightly
+
+6. Love Letter Section
+Scrollable or typewriter-style reveal
+
+Handwritten or elegant script font (e.g., Dancing Script)
+
+Background with soft paper texture or gradient
+
+Final line of the letter:
+
+“This isn’t a confession. Just something I wanted you to feel — if you ever cared to look.”
+
+7. About Her Beauty Section
+Title: “Things About You I Could Never Unsee”
+
+3–5 fade-in text lines, for example:
+
+“The way your eyes pause time.”
+
+“Your laugh — sunlight through curtains.”
+
+“The way you don’t realize how rare you are.”
+
+Small soft icons or emojis (🌸 ✨ 🎧)
+
+🛠 Technical Guidelines
+Mobile-first, fully responsive
+
+Tech stack: HTML + Tailwind CSS + JavaScript
+
+Use Lottie animations or SVGs for characters
+
+Animate on scroll with AOS or custom CSS
+
+Floating particle effect using canvas or CSS keyframes
+
+Optional: background lo-fi music toggle
+
+Fonts via Google Fonts
+
+Hostable on Replit, GitHub Pages, or Vercel
+
+📦 Output Requirement
+Deliver index.html, style.css, script.js, and /assets folder
+
+Code should be clean, modular, and well-commented
+
+All animations and sections must be fully functional on mobile
+
+Use placeholder assets or URLs for Lottie/character illustrations
+
+🎯 Creative Intent
+This microsite should feel like a digital love film told through scroll. It’s an emotionally moving experience — poetic, beautiful, and timeless — something she will never forget, even if she never replies.
+
+✅ Copy this prompt into any AI-powered tool (like ChatGPT-4, Framer AI, Midjourney for
